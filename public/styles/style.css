@@ -1,0 +1,6 @@
+/* Main styles */
+@import url(main.css);
+
+/* Pages styles */
+@import url(../pages/support/style.css);
+@import url(../pages/quest/style.css);

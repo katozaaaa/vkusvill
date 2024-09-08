@@ -1,0 +1,196 @@
+.quest__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding-top: 23px;
+}
+
+.quest__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+}
+
+.quest__title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 120%;
+}
+
+.quest__head-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    svg path {
+        -webkit-transition: all 200ms ease-out;
+        -o-transition: all 200ms ease-out;
+        transition: all 200ms ease-out;
+    }
+}
+
+.quest__head-share:hover {
+  svg path {
+    -webkit-filter: brightness(95%);
+            filter: brightness(95%);
+  }
+}
+
+.quest__body {
+  max-width: 690px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.quest__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 17px;
+  margin-top: 23px;
+}
+
+.quest__bottom-text {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.quest__bottom-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 8px;
+}
+
+.quest__button-chat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    padding: 15px 57px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 120%;
+    color: var(--color--white);
+    background-color: var(--color--green);
+    cursor: pointer;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+@media (hover: hover) {
+  .quest__button-chat:hover {
+    -webkit-filter: brightness(110%);
+            filter: brightness(110%);
+  }
+}
+
+.quest__button-chat:active {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+.quest__button-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 48px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  text-decoration: none;
+  background-color: #F9F9F9;
+  -webkit-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+
+  img {
+    pointer-events: none;
+  }
+}
+
+@media (hover: hover) {
+  .quest__button-contact:hover {
+    -webkit-filter: brightness(95%);
+            filter: brightness(95%);
+  }
+}
+
+.quest__button-contact:active {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+@media (max-width: 767px) {
+    .quest__title {
+      font-size: clamp(1rem, 0.8393rem + 0.7143vw, 1.5rem);
+    }
+
+    .quest__body {
+      font-size: clamp(0.8125rem, 0.7723rem + 0.1786vw, 0.9375rem);
+    }
+
+    .quest__bottom {
+      margin-top: 0;
+      gap: clamp(12px, 2.2vw, 17px);
+    }
+
+    .quest__button-chat {
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: clamp(0.8125rem, 0.7723rem + 0.1786vw, 0.9375rem);
+    }
+}
